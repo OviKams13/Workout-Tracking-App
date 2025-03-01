@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-//pages & components
+// pages & components
 import Home from './pages/Home'
-import Navbar from './components/Navbar';
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
@@ -11,8 +13,18 @@ function App() {
         <Navbar />
         <div className="pages">
           <Routes>
-            <Route path="/"
-            element={<Home />} />
+            <Route 
+              path="/"
+              element={<Home />}
+            />
+            <Route 
+              path="/login" 
+              element={<Login />} 
+            />
+            <Route 
+              path="/signup" 
+              element={<Signup />} 
+            />
           </Routes>
         </div>
       </BrowserRouter>
@@ -20,4 +32,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
