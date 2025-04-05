@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('/api/workouts', {
+      const response = await fetch('https://workout-tracking-app-backend-kgnw.onrender.com/api/workouts', {
         headers: {'Authorization': `Bearer ${user.token}`},
       })
       const json = await response.json()
