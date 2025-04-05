@@ -9,16 +9,10 @@ const cors = require('cors')
 // express app
 const app = express()
 
-// ✅ CORS config
 app.use(cors({
   origin: 'https://workout-tracking-app-frontend.onrender.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }))
-
-// ✅ Gérer les requêtes preflight (OPTIONS)
-app.options('*', cors())
 
 // middleware
 app.use(express.json())
