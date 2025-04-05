@@ -1,5 +1,5 @@
 {
-  "proxy": "https://workout-tracking-app-backend-kgnw.onrender.com",
+  "proxy": "https://workout-tracking-app-backend-kgnw.onrender.com/api",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
